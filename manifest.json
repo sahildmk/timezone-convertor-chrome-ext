@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Timezone Converter",
+  "version": "1.0.0",
+  "description": "Convert time zones directly in text fields by highlighting text",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["popup.css"]
+    }
+  ]
+}
